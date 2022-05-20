@@ -1,0 +1,28 @@
+Classes to implement: 
+ - Train
+    - Letter Train (specified during initialization)
+    - Linked list of Train Cars
+    - follows chosen train path 
+ - Passenger
+    - has to pick which path to take 
+ - Train Car
+    - number of passengers -> max capacity 
+    - space to sit or no? 
+    - boolean locked door function 
+ - Station
+    - queue of trains that are coming 
+ - Train Time (optional -> lower priority)
+    - different times mean different schedules 
+ - Murder!
+   - all the details of the plot and who done it are here 
+    
+   
+Murder Mystery Plot:
+ - mc -> either a detective or a very smart bystander 
+ - go into a tunnel/bridge, lights flicker off, turn on, person dead
+   - WHO DONE IT???
+ - Timer function?????
+ - convenience: 
+   - doors through subway cars are locked 
+   - stuck on a bridge for sanity sake 
+
