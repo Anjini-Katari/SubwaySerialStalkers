@@ -1,16 +1,25 @@
+Priorities:
+ - MC Class -> our protag
+ - Make Train class and train car class
+ - Driver Class to run the game 
+      - what's your name?
+      - tunnel/bridge lights flicker (storyline), murder, who done it
+      - 
+
+
 Classes to implement: 
  - Train
     - Letter Train (specified during initialization)
-    - Linked list of Train Cars
+    - Doubled Linked list of Train Cars
     - follows chosen train path 
- - Passenger
+ - MC
     - has to pick which path to take 
  - Train Car
     - number of passengers -> max capacity 
     - space to sit or no? 
     - boolean locked door function 
- - Station
-    - queue of trains that are coming 
+    - using scanner we lock the doors of the car in front, behind or 
+      current car
  - Train Time (optional -> lower priority)
     - different times mean different schedules 
  - Murder!
@@ -18,11 +27,10 @@ Classes to implement:
     
    
 Murder Mystery Plot:
- - mc -> either a detective or a very smart bystander 
+ - mc -> very smart bystander >:D
  - go into a tunnel/bridge, lights flicker off, turn on, person dead
    - WHO DONE IT???
- - Timer function?????
- - convenience: 
-   - doors through subway cars are locked 
+ - convenience:  
    - stuck on a bridge for sanity sake 
-
+   - no jumping >:(
+ - Timer function?????
