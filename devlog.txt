@@ -1,36 +1,63 @@
-Priorities:
- - MC Class -> our protag
- - Make Train class and train car class
- - Driver Class to run the game 
-      - what's your name?
-      - tunnel/bridge lights flicker (storyline), murder, who done it
-      - 
+Subway Serial Stalkers
+Anjini, Yuki, Hamim
+pd 08
+---------------------
 
 
-Classes to implement: 
- - Train
-    - Letter Train (specified during initialization)
-    - Doubled Linked list of Train Cars
-    - follows chosen train path 
- - MC
-    - has to pick which path to take 
- - Train Car
-    - number of passengers -> max capacity 
-    - space to sit or no? 
-    - boolean locked door function 
-    - using scanner we lock the doors of the car in front, behind or 
-      current car
- - Train Time (optional -> lower priority)
-    - different times mean different schedules 
- - Murder!
-   - all the details of the plot and who done it are here 
-    
-   
-Murder Mystery Plot:
- - mc -> very smart bystander >:D
- - go into a tunnel/bridge, lights flicker off, turn on, person dead
-   - WHO DONE IT???
- - convenience:  
-   - stuck on a bridge for sanity sake 
-   - no jumping >:(
- - Timer function?????
+
+
+
+/////////// Zone of Reflection \\\\\\\\\\\
+------------------------------------------
+OBSTACLES OVERCOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow we so BOSS bc...
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+blah blah pesky bug...
+maybe some of these will move into the Obs.Ovrcm section...
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow! oo!...
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+we changed ___ to ___ bc...
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tales of wisdom gained...
+||||||||||||||||||||||||||||||||||||||||||
+
+
+
+ ______    ______    __   __    __        ______    _______
+/_____/\  /_____/\  /_/\ /_/\  /_/\      /_____/\  /______/\
+\  __ \ \ \  ___\/_ \ \ \\ \ \ \ \ \     \  __ \ \ \  ____\/_
+ \ \ \ \ \ \ \/___/\ \ \ \\ \ \ \ \ \     \ \ \ \ \ \ \ /____/\
+  \ \ \ \ \ \  ___\/_ \ \_/  \ \ \ \ \____ \ \ \ \ \ \ \\_  _\/
+   \ \/  | | \ \____/\ \     / /  \ \/___/\ \ \_\ \ \ \ \_\ \ \
+    \____/_/  \_____\/  \___/_/    \_____\/  \_____\/  \_____\/
+==============================================================
+
+2022-05-24
+--------------------------------------------------------------
+Anjini :: filled out the goog form and created repo
+
+==============================================================
+
+2022-05-25
+--------------------------------------------------------------
+All :: fleshed out rpg details 
+Anjini :: fixed README and commiteds
+==============================================================
+
+yyyy-mm-dd
+--------------------------------------------------------------
+Anjini :: <Thing member did.>
+Yuki :: <Thing member did.>
+Hamim :: <Thing member did.>
+ALL :: <Thing everyone did.>
+==============================================================

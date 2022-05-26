@@ -1,0 +1,49 @@
+Subway Serial Stalkers: Anjini, Yuki, Hamim
+APCS
+Final Project - Proposal
+
+For our final project, we plan on making a RPG where our protagonist 
+has to solve a subway murder. To do this, we have 3 main classes planned 
+out: Train (with subclass TrainCar), MC(main character), and Murder(the 
+driver class).
+
+The train class will be comprised of a linked list of TrainCars. This
+represents the train that out protagonist will be able to travel through.
+
+
+Priorities:
+ - MC Class -> our protag
+ - Make Train class and train car class
+ - Driver Class to run the game 
+      - what's your name?
+      - tunnel/bridge lights flicker (storyline), murder, who done it
+      - 
+
+
+Classes to implement: 
+ - Train
+    - Letter Train (specified during initialization)
+    - Doubled Linked list of Train Cars
+    - follows chosen train path 
+ - MC
+    - has to pick which path to take 
+ - Train Car
+    - number of passengers -> max capacity 
+    - space to sit or no? 
+    - boolean locked door function 
+    - using scanner we lock the doors of the car in front, behind or 
+      current car
+ - Train Time (optional -> lower priority)
+    - different times mean different schedules 
+ - Murder!
+   - all the details of the plot and who done it are here 
+    
+   
+Murder Mystery Plot:
+ - mc -> very smart bystander >:D
+ - go into a tunnel/bridge, lights flicker off, turn on, person dead
+   - WHO DONE IT???
+ - convenience:  
+   - stuck on a bridge for sanity sake 
+   - no jumping >:(
+ - Timer function?????
