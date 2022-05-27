@@ -45,24 +45,25 @@ tales of wisdom gained...
 2022-05-24
 --------------------------------------------------------------
 Anjini :: filled out the goog form and created repo
-
 ==============================================================
 
 2022-05-25
 --------------------------------------------------------------
 All :: fleshed out rpg details 
-Anjini :: fixed README and commiteds
+Anjini :: fixed README and committed
+Yuki: Created team flag
 ==============================================================
 
 2022-05-26
 --------------------------------------------------------------
+All: Fixed devlog 
 Hamim :: initial setup of Train, TrainCar, and Protagonist classes
 ==============================================================
 
-yyyy-mm-dd
+2022-mm-dd
 --------------------------------------------------------------
-Anjini :: <Thing member did.>
-Yuki :: <Thing member did.>
-Hamim :: <Thing member did.>
-ALL :: <Thing everyone did.>
+Anjini :: 
+Yuki :: 
+Hamim :: 
+ALL :: 
 ==============================================================

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Murder {
+public class Woo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hey! What's your name?");
