@@ -54,6 +54,11 @@ All :: fleshed out rpg details
 Anjini :: fixed README and commiteds
 ==============================================================
 
+2022-05-26
+--------------------------------------------------------------
+Hamim :: initial setup of Train, TrainCar, and Protagonist classes
+==============================================================
+
 yyyy-mm-dd
 --------------------------------------------------------------
 Anjini :: <Thing member did.>
