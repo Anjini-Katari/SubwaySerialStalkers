@@ -1,17 +1,17 @@
 public class Train{
 //class of linked nodes, each node is a train car 
     final private int _size = 10;
-    private TrainCar _head; //car of conductor (where car-locking keys are attained)
+    private TrainCar _head, _tail; //car of conductor (where car-locking keys are attained)
     private TrainCar curr;
 
     public Train() {
         _head = new TrainCar(0);
-        TrainCar tmp = _head;
+
         for (int i = 0; i < _size; i++) {
-            tmp.setFront(new TrainCar(i));
-            tmp = tmp.getFront();
-            //backwards functionality to be added
+            addCar(new TrainCar(i));
         }
+        
+
         curr = _head.getFront(); //initializes protagonist at car in front of conductor car
     }
 
@@ -26,6 +26,14 @@ public class Train{
 
     public TrainCar getHead() {
         return _head;
+    }
+
+    public TrainCar addCar(TrainCar toAdd) {
+        tmp = _tail;
+        _tail.setFront(toAdd);
+        tmp = tmp.getFront();
+        tmp.setBack(_tail);
+        _tail = tmp;
     }
 
 
