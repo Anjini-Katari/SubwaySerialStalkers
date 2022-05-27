@@ -60,6 +60,14 @@ All: Fixed devlog
 Hamim :: initial setup of Train, TrainCar, and Protagonist classes
 ==============================================================
 
+2022-05-27
+--------------------------------------------------------------
+Anjini :: Fleshed out plan more (additions of uspects list, passenger
+          class, sort for sus ratings and stack usage for hints)
+Hamim :: Added (lots) to Train class and Protagonist class
+==============================================================
+
+
 2022-mm-dd
 --------------------------------------------------------------
 Anjini :: 
