@@ -1,0 +1,24 @@
+Subway Serial Stalkers
+Anjini, Yuki, Hamim
+pd 08
+---------------------
+
+Plot:
+
+
+Notes:
+- Things we're using from semester two
+    - Linked List for train cars
+    - sort for updated sus ratings
+    - processing for making things pretty
+    - stacks for givign hints
+- Scanner functions
+    - hint
+        - stack for giving hints -> lowest thing in stack
+        will be a very telling hint, closer to the top is
+        more vague
+    - Give up
+        - gives the player the answer (answer is predetermined)
+    - Guess
+        - Player types who they think the killer is (answer will
+          not be given, only "right" or "wrong")
