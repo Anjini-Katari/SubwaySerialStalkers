@@ -1,26 +1,43 @@
+import java.util.LinkedList;
+
+
+//class of linked nodes, each node is a train car
 public class Train{
-//class of linked nodes, each node is a train car 
     final private int _size = 10;
-    private TrainCar _head; //car of conductor (where car-locking keys are attained)
-    private TrainCar curr;
+    //_head is the train car of the conductor (where car-locking keys are attained)
+    private TrainCar _head, _tail;
+    private TrainCar _curr;
+
+    private LinkedList<TrainCar> train = new LinkedList<TrainCar>();
+
 
     public Train() {
-        _head = new TrainCar(0);
-        TrainCar tmp = _head;
+        //pointers at the head and tail cars
+        _head = new TrainCar();
+        _tail = new TrainCar();
+
         for (int i = 0; i < _size; i++) {
-            tmp.setFront(new TrainCar(i));
-            tmp = tmp.getFront();
-            //backwards functionality to be added
+            train.add(new TrainCar());
         }
-        curr = _head.getFront(); //initializes protagonist at car in front of conductor car
+
+        //initializes protagonist at car in front of conductor car
+        _curr = _head.getFront();
     }
 
     public String toString() {
-        TrainCar tmp = _head;
         String output = "";
-        for (int i = 0; i < _size; i++) {
-            output += "[ " + tmp.getCarNum() + " ] -- ";
+
+        for (int i = 1; i <= _size; i++) {
+
+          if (i == 10) {
+            output += "[ " + i + " ]"; //gets rid of trailing linkage between train cars
+          }
+          else {
+            output += "[ " + i + " ] -- ";
+          }
+
         }
+
         return output;
     }
 
@@ -32,18 +49,19 @@ public class Train{
 
 
 
+
+
     private class TrainCar{
         public boolean _locked = false;
         public int _passengers;
-        public int carNum; //identifier for train car; may be just placeholder
+        // public int carNum; //identifier for train car; may be just placeholder
 
-        TrainCar _front, _back;
+        TrainCar _front, _behind; //points to trainCar in front of curr and behind
 
-        public TrainCar(int carN){
-            _front = _back = null;
+        public TrainCar(/*int carN*/){
+            _front = _behind = null;
             _passengers = 10;
-            carNum = carN;
-
+            // this.carNum = carN;
         }
 
         public TrainCar setFront(TrainCar fr) {
@@ -52,7 +70,7 @@ public class Train{
         }
 
         public TrainCar setBack(TrainCar bk) {
-            _back = bk;
+            _behind = bk;
             return bk;
         }
 
@@ -61,12 +79,9 @@ public class Train{
         }
 
         public TrainCar getBack() {
-            return _back;
+            return _behind;
         }
 
-        public int getCarNum() {
-            return carNum;
-        }
-    }
+    } //ends subclass TrainCar
 
 }
