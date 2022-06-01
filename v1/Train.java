@@ -12,10 +12,10 @@ public class Train{
 
 
     public Train() {
-        _head = new TrainCar(0);
+        _head = new TrainCar();
 
         for (int i = 0; i < _size; i++) {
-            train.add(TrainCar(7));
+            train.add(new TrainCar());
         }
 
 
@@ -25,11 +25,13 @@ public class Train{
 
     public String toString() {
         String output = "";
-        for (int i = 0; i < _size; i++) {
-          if (i == 9) {
-            output += "[" + i + " ]"; //gets rid of trailing linkage between train cars
+        for (int i = 1; i <= _size; i++) {
+          if (i == 10) {
+            output += "[ " + i + " ]"; //gets rid of trailing linkage between train cars
           }
+          else {
             output += "[ " + i + " ] -- ";
+          }
         }
         return output;
     }
@@ -47,15 +49,14 @@ public class Train{
     private class TrainCar{
         public boolean _locked = false;
         public int _passengers;
-        public int carNum; //identifier for train car; may be just placeholder
+        // public int carNum; //identifier for train car; may be just placeholder
 
         TrainCar _front, _behind; //points to trainCar in front of curr and behind
 
-        public TrainCar(int carN){
+        public TrainCar(/*int carN*/){
             _front = _behind = null;
             _passengers = 10;
-            carNum = carN;
-            System.out.println(carN);
+            // this.carNum = carN;
         }
 
         public TrainCar setFront(TrainCar fr) {
@@ -76,9 +77,9 @@ public class Train{
             return _behind;
         }
 
-        public int getCarNum() {
-            return carNum;
-        }
+        // public int getCarNum() {
+        //     return carNum;
+        // }
     } //ends subclass TrainCar
 
 }
