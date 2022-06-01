@@ -6,7 +6,8 @@ public class Woo {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hey! What's your name?");
         Train train = new Train(); //constructor of Train class
-        Protagonist mc = new Protagonist(sc.next());
+        Protagonist mc = new Protagonist();
+        System.out.println("Okay " + sc.nextLine());
         System.out.println("Train:\n" + train);
 
         sc.close();

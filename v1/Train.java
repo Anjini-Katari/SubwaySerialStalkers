@@ -12,12 +12,13 @@ public class Train{
 
 
     public Train() {
+        //pointers at the head and tail cars
         _head = new TrainCar();
+        _tail = new TrainCar();
 
         for (int i = 0; i < _size; i++) {
             train.add(new TrainCar());
         }
-
 
         //initializes protagonist at car in front of conductor car
         _curr = _head.getFront();
@@ -25,14 +26,18 @@ public class Train{
 
     public String toString() {
         String output = "";
+
         for (int i = 1; i <= _size; i++) {
+
           if (i == 10) {
             output += "[ " + i + " ]"; //gets rid of trailing linkage between train cars
           }
           else {
             output += "[ " + i + " ] -- ";
           }
+
         }
+
         return output;
     }
 
@@ -77,9 +82,6 @@ public class Train{
             return _behind;
         }
 
-        // public int getCarNum() {
-        //     return carNum;
-        // }
     } //ends subclass TrainCar
 
 }

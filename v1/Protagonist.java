@@ -1,17 +1,17 @@
 public class Protagonist {
-    private String name; // player's name
-    
-    //You can write to the notepad to save potential clues the player may find
-    private String notes; 
-    
+    // private String name; // player's name
 
-    public Protagonist(String nameInput) {
-        name = nameInput;
+    //You can write to the notepad to save potential clues the player may find
+    private String notes;
+
+
+    public Protagonist() {
+        // name = nameInput;
         notes = "";
     }
 
     public String getName() {
-        return name;
+        // return name;
     }
 
     public String openNotes() {
@@ -22,6 +22,6 @@ public class Protagonist {
     //jotting down clues
     public String write(String note) {
         notes += "\n" + note;
-        return note; 
-    } 
+        return note;
+    }
 }
