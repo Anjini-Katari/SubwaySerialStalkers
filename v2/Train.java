@@ -45,12 +45,6 @@ public class Train{
         return _head;
     }
 
-
-
-
-
-
-
     private class TrainCar{
         public boolean _locked = false;
         public int _passengers;
