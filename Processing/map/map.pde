@@ -36,7 +36,7 @@ void setup(){
 }
 
 void draw(){
-  update(mouseX, mouseY);
+  //update(mouseX, mouseY);
   if (musicOff) {
     file.pause();
   }
@@ -46,25 +46,34 @@ void draw(){
 }
 
 
-void update(int x, int y) {
-  if ( music(musicX, musicY, musicSize, musicSize) ) {
-    musicOff = true;
-  }
-}
+//void update(int x, int y) {
+//  if ( overMusic(musicX, musicY, musicSize, musicSize) ) {
+//    musicOff = true;
+//  }
+//}
 
 void mousePressed() {
   //if musicOff is true, then the volume is turned off
   if (musicOff) {
-    file.pause();
+    //file.pause();
   }
 }
 
-//checks if music button is clicked so user can turn music on and off if they please
-boolean overMusic(int x, int y, int width, int height) {
-  if (mouseX >= x && mouseX <= x+width && mouseY >= y && mouseY <= y+height) {
+////checks if music button is clicked so user can turn music on and off if they please
+//boolean overMusic(int x, int y, int width, int height) {
+//  if (mouseX >= x && mouseX <= x+width && mouseY >= y && mouseY <= y+height) {
+//    return true;
+//  }
+//  else {
+//    return false;
+//  }
+//} //end overMusic()
+
+boolean overMusic(int x, int y, int width, int height)  {
+  if (mouseX >= x && mouseX <= x+width && 
+      mouseY >= y && mouseY <= y+height) {
     return true;
-  }
-  else {
+  } else {
     return false;
   }
-} //end overMusic()
+}
