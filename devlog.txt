@@ -69,7 +69,6 @@ Hamim :: Added (lots) to Train class and Protagonist class
 
 2022-05-31
 --------------------------------------------------------------
-Anjini :: 
 Yuki :: updated UML with correct relations and fixed how train should be 
 printed out
 Hamim :: worked on including LinkedList TrainCar, contemplated toString() 
@@ -80,13 +79,25 @@ ALL ::
 
 2022-06-01
 --------------------------------------------------------------
-Anjini ::
 Yuki :: started Processing portion of the project, imported NYC subway map
 and set two shapes to show location of anatagonist and protagonist on map. 
-Hamim :: Fixefd some bugs in inititing the game
+Hamim :: Fixed some bugs in initiating the game
 ALL ::
 ==============================================================
 
+2022-06-02
+--------------------------------------------------------------
+Yuki :: imported music into map.pde and chose a new map that is easier on the eyes. 
+Hamim :: worked on developing plot of the murder mystery game
+ALL ::
+==============================================================
+
+2022-06-03
+--------------------------------------------------------------
+Yuki :: 
+Hamim :: 
+ALL ::
+==============================================================
 
 
 2022-mm-dd
