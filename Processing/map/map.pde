@@ -4,9 +4,10 @@ SoundFile file;
 PImage map;
 PShape protag;
 PShape antag;
-boolean musicOff = false;
-int musicX, musicY;
+int musicX = 10;
+int musicY = 680;
 int musicSize = 25;
+boolean musicOn = true;
 
 void setup(){
   //launches map as bkg
@@ -22,58 +23,33 @@ void setup(){
   antag.setFill(color(255,0,222));
   antag.setStroke(true);
   
-  //creates music button
-  musicX = 10;
-  musicY = 680;
-  rect(musicX, musicY, musicSize, musicSize);
+  //create music button
+  rect(musicX, musicY, 35, 25);
+  fill(0);
+  text("pause", musicX + 2, musicY + 10);
   
   //loads file based on the file name
   file = new SoundFile(this,"Departure.wav");
   file.play();
-  
   //changes volume level (number between 0 and 1)
   file.amp(1);
 }
 
 void draw(){
-  //update(mouseX, mouseY);
-  if (musicOff) {
-    file.pause();
-  }
   //shows protag current location
   shape(protag);
   //shows antag current location
+  shape(antag);
 }
-
-
-//void update(int x, int y) {
-//  if ( overMusic(musicX, musicY, musicSize, musicSize) ) {
-//    musicOff = true;
-//  }
-//}
 
 void mousePressed() {
-  //if musicOff is true, then the volume is turned off
-  if (musicOff) {
-    //file.pause();
+  //checks for music button being clicked
+  if (musicOn) {
+    musicOn = false;
+    file.pause();
   }
-}
-
-////checks if music button is clicked so user can turn music on and off if they please
-//boolean overMusic(int x, int y, int width, int height) {
-//  if (mouseX >= x && mouseX <= x+width && mouseY >= y && mouseY <= y+height) {
-//    return true;
-//  }
-//  else {
-//    return false;
-//  }
-//} //end overMusic()
-
-boolean overMusic(int x, int y, int width, int height)  {
-  if (mouseX >= x && mouseX <= x+width && 
-      mouseY >= y && mouseY <= y+height) {
-    return true;
-  } else {
-    return false;
+  else {
+    musicOn = true;
+    file.play();
   }
 }
