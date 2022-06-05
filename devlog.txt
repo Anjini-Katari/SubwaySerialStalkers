@@ -94,11 +94,17 @@ ALL ::
 
 2022-06-03
 --------------------------------------------------------------
-Yuki :: 
+Yuki :: worked on making music interactive for user in map
 Hamim :: setup Stack to store game hints; created v3 
 ALL ::
 ==============================================================
 
+2022-06-04
+--------------------------------------------------------------
+Yuki :: created function to pause and play music with button and created a xcord and ycord tracker based off inspo of netlogo
+Hamim :: 
+ALL ::
+==============================================================
 
 2022-mm-dd
 --------------------------------------------------------------
