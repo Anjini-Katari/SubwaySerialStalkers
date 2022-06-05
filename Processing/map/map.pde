@@ -18,11 +18,11 @@ void setup(){
   map = loadImage("map.jpg");
   
   //creates protag and antag shapes
-  protag = createShape(ELLIPSE, 327,546,8,8);
+  protag = createShape(ELLIPSE, 327,542,8,8);
   protag.setFill(color(0,255,0));
   protag.setStroke(true);
   antag = createShape(ELLIPSE, 240,460,8,8);
-  antag.setFill(color(255,0,0));
+  antag.setFill(color(255,0,222));
   antag.setStroke(true);
   
   //loads file based on the file name
@@ -52,6 +52,9 @@ void draw(){
   else {
     text("play", musicX + 5, musicY + 20);
   }
+  
+  /* to display x and y coord on map when clicked on so it is like netlogo for patches 
+  and world */
   if (mousePressed) {
     println(mouseX, mouseY);
   }
