@@ -2,6 +2,7 @@ import java.util.Stack;
 
 public class Protagonist {
     private String name; // player's name
+    private final String[] questions = {"Hey, what's your name?", "Where are you headed?", "When was the last time you went to the bathroom?"};
 
     //You can write to the notepad to save potential clues the player may find
     private String notes;
@@ -37,5 +38,10 @@ public class Protagonist {
         String toStore = hints.pop();
         notes = toStore + "\n" + notes;
         return toStore;
+    }
+
+    public String askQ(Character c, int i) {
+        System.out.println(questions[i]);
+        return c.respond(i);
     }
 }
