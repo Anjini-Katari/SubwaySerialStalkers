@@ -62,7 +62,6 @@ public class Woo {
         System.out.println("Current notes: " + "\n" + mc.openNotes());
         System.out.println("----------");
 
-
         Character ham = new Character("hamim", "glasses");
         System.out.println("Name: " + ham.getName());
         System.out.println("KI: " + ham.getItem());
