@@ -5,6 +5,34 @@ pd 08
 
 Plot:
 
+riding on train 
+lights off
+murder
+lights on 
+ask for names of everyone in the car 
+    the door did open at some point but everyone in the
+    car was still there -> assume that the murder is still
+    in the car 
+disposed of the murder weapon in an empty car 
+few people in the cars next to us 
+    questioning people from other car 
+    "I saw a ______ figure" 
+    next car over has the murder weapon -> bloody knife with a 
+    pair of medical gloves 
+finding the murderer 
+    gloves are larger -> person with larger hands 
+    car with murder weapon is 2 to the right -> person probably 
+    sitting on the right side 
+other people say sus things, fred's story doesn't add up 
+    says he wants to transfer to the orange line from chambers 
+    -> the orange line is not close to chambers 
+    there are no subway maps in any of the cars 
+split -> where do you want to go?
+    A train -> gg (maybe play the song?)
+    6 train -> gg
+    plaza -> find the murderer, tackle, call the police, you win
+
+
 
 Notes:
 - Things we're using from semester two
