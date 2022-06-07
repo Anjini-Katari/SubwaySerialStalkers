@@ -1,8 +1,16 @@
 import java.util.Scanner;
+import java.awt.Desktop;
+import java.io.*;
 
 public class Woo {
 
     public static void main(String[] args) {
+      // try {
+      //   Desktop.getDesktop().open(new File("map.pde"));
+      // }
+      //   catch (Exception e) {
+      //     System.out.println("you suck");
+      //   }
         Scanner sc = new Scanner(System.in);
 
         Train train = new Train(); //constructor of Train class
@@ -53,6 +61,15 @@ public class Woo {
         System.out.println("Hint2: " + mc.storeHint() + "\n");
         System.out.println("Current notes: " + "\n" + mc.openNotes());
         System.out.println("----------");
+
+
+        Character ham = new Character("hamim", "glasses");
+        System.out.println("Name: " + ham.getName());
+        System.out.println("KI: " + ham.getItem());
+        String[] res = {"What's it to you?", "I'm on my way to school.", "No comment."};
+        ham.setResponses(res);
+
+        System.out.println(mc.askQ(ham, 1));
 
         sc.close();
 
