@@ -99,12 +99,18 @@ Hamim :: setup Stack to store game hints; created v3
 ALL ::
 ==============================================================
 
-2022-06-04
+2022-06-06
 --------------------------------------------------------------
-Yuki :: created function to pause and play music with button and created a xcord and ycord tracker based off inspo of netlogo
+Yuki :: 
 Hamim :: 
 ALL ::
 ==============================================================
+2022-mm-dd
+--------------------------------------------------------------
+Anjini :: 
+Yuki :: 
+Hamim :: 
+ALL :: 
 
 2022-mm-dd
 --------------------------------------------------------------
