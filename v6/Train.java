@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-import java.util.AbstractQueue;
 
 //class of linked nodes, each node is a train car
 public class Train{
@@ -9,6 +8,7 @@ public class Train{
     private TrainCar _curr;
 
     private LinkedList<TrainCar> train = new LinkedList<TrainCar>();
+
 
 
     public Train() {
