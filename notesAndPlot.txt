@@ -5,6 +5,28 @@ pd 08
 
 Plot:
 
+You're riding on the 2 train, going downtown to Stuyvesant 
+High School, when the lights start to flicker. You pay no
+mind to it, brushing it off as the usual train shenanigans. 
+
+When the lights turn off completely, you're a little surprised,
+but brush it off again, thinking to yourself 'The MTA needs to
+step up their game'. The lights are off for about a minute, 
+during which you stay engrossed with an intense game of angry 
+birds. 
+
+When the lights turn back on, you hear a scream. You turn to 
+source of the noise as stare in shock as your eyes fall on a 
+bloodied body sitting in one of the train seats. 
+
+You turn to look at your fellow travellers and come to 2 conclusions:
+1. With the amount of blood the person lost, there was no way they were still alive
+2. There was a murderer in train car, with you, at that very moment. 
+
+--
+
+
+
 riding on train 
 lights off
 murder
