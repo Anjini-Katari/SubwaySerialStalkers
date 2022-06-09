@@ -8,7 +8,7 @@ public class Protagonist {
     //You can write to the notepad to save potential clues the player may find
     private String notes;
 
-    private Stack<String> hints = new Stack();
+    private Stack<String> hints = new Stack<String>();
 
     public Protagonist() {
         notes = "";
@@ -45,6 +45,4 @@ public class Protagonist {
         System.out.println(questions[i]);
         return c.respond(i);
     }
-
-    public int susSort()
 }
