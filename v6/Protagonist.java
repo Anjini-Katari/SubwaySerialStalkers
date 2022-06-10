@@ -46,5 +46,5 @@ public class Protagonist {
         return c.respond(i);
     }
 
-    public int susSort()
+    public int susSort(){}
 }

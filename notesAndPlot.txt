@@ -22,15 +22,11 @@ bloodied body sitting in one of the train seats.
 You turn to look at your fellow travellers and come to 2 conclusions:
 1. With the amount of blood the person lost, there was no way they were still alive
 2. There was a murderer in train car, with you, at that very moment. 
-
 --
+The first thing you 
 
 
 
-riding on train 
-lights off
-murder
-lights on 
 ask for names of everyone in the car 
     the door did open at some point but everyone in the
     car was still there -> assume that the murder is still
