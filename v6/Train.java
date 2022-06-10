@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Queue;
 
 //class of linked nodes, each node is a train car
 public class Train{
@@ -8,7 +9,7 @@ public class Train{
     private TrainCar _curr;
 
     private LinkedList<TrainCar> train = new LinkedList<TrainCar>();
-
+    Queue<String> stations = new LinkedList<String>();
 
 
     public Train() {
@@ -21,7 +22,7 @@ public class Train{
         }
 
         //initializes protagonist at car in front of conductor car
-        _curr = _head.getFront();
+        _curr = train.get(1);
     }
 
     public String toString() {
@@ -45,35 +46,21 @@ public class Train{
         return _head;
     }
 
+    public void stationSetup() {
+        stations.add("Times Sq- 42 St");
+        stations.add("34 St- Penn Station");
+        stations.add("14 St");
+        stations.add("Chambers St");
+    }
+
     private class TrainCar{
         public boolean _locked = false;
         public int _passengers;
         // public int carNum; //identifier for train car; may be just placeholder
 
-        TrainCar _front, _behind; //points to trainCar in front of curr and behind
-
         public TrainCar(/*int carN*/){
-            _front = _behind = null;
             _passengers = 10;
             // this.carNum = carN;
-        }
-
-        public TrainCar setFront(TrainCar fr) {
-            _front = fr;
-            return fr;
-        }
-
-        public TrainCar setBack(TrainCar bk) {
-            _behind = bk;
-            return bk;
-        }
-
-        public TrainCar getFront() {
-            return _front;
-        }
-
-        public TrainCar getBack() {
-            return _behind;
         }
 
     } //ends subclass TrainCar

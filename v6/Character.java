@@ -33,7 +33,8 @@ public class Character {
     }
 
     public int susPlus(int i) {
-        susPlus += i;
+        susVal += i;
+        return susVal;
     }
 
 }
