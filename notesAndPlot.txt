@@ -32,44 +32,61 @@ you remember hearing the subway doors open and shut twice! You think to when you
 stepped into the train car for the first time. There were 4 other people with you. You
 think back to the people you just talked to. There were 4 of them. 
 --
-<which car do you enter?> 
+<left car or right car?> 
+(left cars are empty, one or two people that aren't of interest)
+<right car -> you see an old lady knitting -> next car over has no people but 
+you find a large pair of gloves and a bloody knife>
+
+Ask the old lady a question? 
+ - Did you see someone come in to the car a few minutes ago?
+ - Oh...well aside from you, dear, I couldn't see much else. The lights went off,
+   you know!
+ - Not even a shadow? Did you at least hear someone? 
+ - I did see a long shadow walk through the door, but I'm afraid I can't tell you much
+   else. It's my age, my eyes aren't what they used to be.
+ - Ah, I see. Thank you for your help!
+ - Of course, dear!
+
+You walk back to your train car in deep thought. This seemed like a planned out 
+attack, so the killer must've thought about how they were going to execute it.
+But the attack was so messy, and there's the knife, so it was probably a rushed. 
+Which means whoever was the killer, hopefully doesn't have a very strong alibi! 
+
+<asks everyone where they're going> 
+ - Hamim and Yuki give off sus vibes but aren't tall enough 
+ - Anjini is tall enough but isn't sus, just weird
+ - Fred is sus and tall 
+
+ <responses to the question: Where are you going?
+  - Hamim: We're literally in the same APCS class, I'm going 
+           to class like you. 
+    protag: Its 7 am, you're ridiculously early.
+    Hamim: So are you...
+    protag: Fair enough
+ - Yuki: I'm headed over to South Street Sea Port to meet with some friends 
+   protag: it's 7 am? 
+   Yuki: And your point is? 
+   protag: ...
+ - Anjini: Book shopping! I have a whole route planned out. My goal is to
+           visit at least 15 stores.
+    protag: Are you a native New Yorker...? This feels like a very touristy thing
+            to do. 
+    Anjini: It is not! And for your information, yes I am a native New Yorker.
+ - Fred: I'm headed to Brooklyn to visit some friends.
+    protag: Oh cool! What part? 
+    Fred: Williamsburg.
+    protag: I don't the 2 goes to Williamsburg.
+    Fred: No, no it doesn't. I'm going to switch over to the F train at Chambers Street.
+    protag: Right...
+---
+Did the orange line have a stop by Chambers Street? You look around the train for a subway map 
+but find none. 
+<check other cars for maps, find none>
+You check your phone but you're still underground and there's no service but even 
+without the map, you can tell that something with George's story is off. 
 
 
-
-disposed of the murder weapon in an empty car 
-few people in the cars next to us 
-    questioning people from other car 
-    "I saw a ______ figure" 
-    next car over has the murder weapon -> bloody knife with a 
-    pair of medical gloves 
-finding the murderer 
-    gloves are larger -> person with larger hands 
-    car with murder weapon is 2 to the right -> person probably 
-    sitting on the right side 
-other people say sus things, fred's story doesn't add up 
-    says he wants to transfer to the orange line from chambers 
-    -> the orange line is not close to chambers 
-    there are no subway maps in any of the cars 
 split -> where do you want to go?
     A train -> gg (maybe play the song?)
     6 train -> gg
     plaza -> find the murderer, tackle, call the police, you win
-
-
-
-Notes:
-- Things we're using from semester two
-    - Linked List for train cars
-    - sort for updated sus ratings
-    - processing for making things pretty
-    - stacks for givign hints
-- Scanner functions
-    - hint
-        - stack for giving hints -> lowest thing in stack
-        will be a very telling hint, closer to the top is
-        more vague
-    - Give up
-        - gives the player the answer (answer is predetermined)
-    - Guess
-        - Player types who they think the killer is (answer will
-          not be given, only "right" or "wrong")
