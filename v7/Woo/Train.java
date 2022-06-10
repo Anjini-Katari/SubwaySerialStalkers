@@ -7,6 +7,7 @@ public class Train{
     //_head is the train car of the conductor (where car-locking keys are attained)
     private TrainCar _head, _tail;
     private TrainCar _curr;
+    private int carNum;
 
     private LinkedList<TrainCar> train = new LinkedList<TrainCar>();
     Queue<String> stations = new LinkedList<String>();
@@ -22,15 +23,17 @@ public class Train{
         }
 
         //initializes protagonist at car in front of conductor car
-        _curr = train.get(1);
+        _curr = train.get(0);
+        carNum = 1;
     }
 
+    // for debugging purposes
     public String toString() {
         String output = "";
 
         for (int i = 1; i <= _size; i++) {
 
-          if (i == 10) {
+          if (i == _size) {
             output += "[ " + i + " ]"; //gets rid of trailing linkage between train cars
           }
           else {
@@ -52,13 +55,27 @@ public class Train{
         stations.add("14 St");
         stations.add("Chambers St");
     }
-
+    
+    public int moveCar(int i) {
+        if (carNum + i >= 1 && carNum + i <= _size) {
+          carNum += i; 
+        }
+        return i;
+    }
+    
+    public int getCarNum() {
+     return carNum; 
+    }
+    
+    public int getSize() {
+     return _size; 
+    }
     private class TrainCar{
         public boolean _locked = false;
         public int _passengers;
-        // public int carNum; //identifier for train car; may be just placeholder
 
-        public TrainCar(/*int carN*/){
+
+        public TrainCar(){
             _passengers = 10;
             // this.carNum = carN;
         }

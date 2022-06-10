@@ -22,6 +22,9 @@ int padY = 75;
 
 int mapBX = 400;
 int mapBY = 600;
+boolean mapOn = false;
+
+Train tr;
 
 void setup() {
   size(1000,750); 
@@ -42,6 +45,8 @@ void setup() {
   //changes volume level (number between 0 and 1)
   file.amp(1);
   
+  tr = new Train();
+  
 }
 
 void draw() {
@@ -52,8 +57,17 @@ void draw() {
     fill(255);
   }
   
+  textSize(20);
+  
   shape(protag);
   shape(notepad);
+  if (mapOn) {
+   image(map, 175, 10); 
+  }
+  else {
+   image(map, 1175, 10); 
+  }
+  
   image(map, mapBX+1000, mapBY);
   
    //create music button
@@ -83,6 +97,13 @@ void draw() {
   else {
     text("Play", musicX + buttonSize/2, musicY + buttonSize/2);
   }
+  
+  //shows current train car
+  fill(0, 255, 0);
+  rect(50, 500, 300, 50);
+  fill(255, 0, 0);
+  text("Current Car Number: " + Integer.toString(tr.getCarNum()), 75, 525);
+  
   fill(255);
 }
 
@@ -96,27 +117,31 @@ boolean hover(int xcor, int ycor, int width, int height) {
 }
 
 void keyPressed() {
-   if (keyCode == RIGHT) {
+   if (keyCode == RIGHT && tr.getCarNum() != tr.getSize()) {
      if (x < 650) {
        protag.translate(200, 0);
        x += 200;
+       tr.moveCar(1);
      }
      else {
        protag.translate(-600, 150);
        x = 50;
        y = 50;
+       tr.moveCar(1);
      }
    }
    
-   if (keyCode == LEFT) {
+   if (keyCode == LEFT && tr.getCarNum() != 1) {
      if (x > 50) {
        protag.translate(-200, 0);
        x -= 200;
+       tr.moveCar(-1);
      }
      else {
        protag.translate(600, -150);
        x = 650;
        y = 50;
+       tr.moveCar(-1);
      }
    }
   
@@ -144,5 +169,9 @@ void mousePressed() {
        notepad.translate(-1000, 0);  
        notesOn = true;
      }
+  }
+  
+  if (hover(mapBX, mapBY, buttonSize, buttonSize)) {
+    mapOn = !mapOn;
   }
 }
