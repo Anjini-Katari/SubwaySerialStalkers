@@ -85,8 +85,30 @@ but find none.
 You check your phone but you're still underground and there's no service but even 
 without the map, you can tell that something with George's story is off. 
 
+You feel the train begin to slow. You realize that a decision had to be made now- otherwise
+you might never catch the murderer! 
 
-split -> where do you want to go?
-    A train -> gg (maybe play the song?)
-    6 train -> gg
-    plaza -> find the murderer, tackle, call the police, you win
+<who do you pick?
+ - if someone other than fred is picked return "Are you sure?" then go back to the picking thing
+ - if fred then cont. story>
+
+Fred! 
+
+You turn to him just as the doors open. He catches your eye before sprinting out of the car to follow him.
+You rush up the stars, taking two at a time before taking a deep breath of air when you reach above the 
+station. You can't see Fred anymore...where could he have gone? 
+<choices:
+ - E train
+ - 6 train
+ - park
+ if either trains print out: You run over to the train station, but when you get there he's gone.
+ According to the announcements, there isn't anther train coming for some time...where did he go? 
+ Did he even come to the train station?
+
+ if park: You jog over to the nearby park, spotting Fred trying to blend in with the crowd. You 
+ run faster and tackle him off his feet, pulling his arms behind his back just as the police come over to 
+ see what the commotion is about. You explain the sitation and all the evidence you've gathered so far. 
+ The police thank you but not before giving advising you to never ever do that again. You agree (you 
+ lie) and bid your goodbyes. 
+
+ Then you groan when you realize you still have to go class, but hey- you solved a murder!
