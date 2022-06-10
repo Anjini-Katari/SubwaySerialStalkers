@@ -23,14 +23,19 @@ You turn to look at your fellow travellers and come to 2 conclusions:
 1. With the amount of blood the person lost, there was no way they were still alive
 2. There was a murderer in train car, with you, at that very moment. 
 --
-The first thing you 
+The first thing you should do, you reason, is take note of everyone's name. 
+
+<asks for names>
+
+Next, you think back to when the lights turned off. Nothing smelled or felt off but...
+you remember hearing the subway doors open and shut twice! You think to when you
+stepped into the train car for the first time. There were 4 other people with you. You
+think back to the people you just talked to. There were 4 of them. 
+--
+<which car do you enter?> 
 
 
 
-ask for names of everyone in the car 
-    the door did open at some point but everyone in the
-    car was still there -> assume that the murder is still
-    in the car 
 disposed of the murder weapon in an empty car 
 few people in the cars next to us 
     questioning people from other car 
