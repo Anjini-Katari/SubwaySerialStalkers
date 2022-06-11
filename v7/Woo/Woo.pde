@@ -1,6 +1,16 @@
 import processing.sound.*;
 SoundFile file;
 
+int boxWidth = 250;
+int boxHeight = 50;
+
+// what ur currently typing
+String typing = "";
+//once u press enter, this is stored -> updates whenever u press enter/return
+String entered = "";
+//current q that u have to answer or j info display
+String prompt = "";
+
 PShape protag;
 PShape notepad;
 PImage map;
@@ -28,6 +38,8 @@ Train tr;
 
 void setup() {
   size(1000,750); 
+  textSize(16);
+  
   protag = createShape(ELLIPSE, 125, 100, 8, 8);
   protag.setFill(color(0,255,0));
   protag.setStroke(true);
@@ -46,18 +58,31 @@ void setup() {
   file.amp(1);
   
   tr = new Train();
-  
 }
 
 void draw() {
   background(0, 0, 50);
-  for (int i = 50; i < 750;i += 200) {
+  
+  text(prompt, 500, 350);
+  //textbox
+  fill(255);
+  rect(300, 375, 375, 50);
+  fill(0);
+  textAlign(LEFT, CENTER);
+  text(typing, 315, 395);
+  
+  textAlign(CENTER);
+  fill(255);
+  
+  prompt = "Hey there. You ready to play?";
+  if (entered.toLowerCase().equals("yes")){
+    prompt = "You better be. Entering game now...";
+    
+    for (int i = 50; i < 750;i += 200) {
     rect(i, 50, 150, 100);
     rect(i,200, 150, 100);
     fill(255);
   }
-  
-  textSize(20);
   
   shape(protag);
   shape(notepad);
@@ -102,9 +127,33 @@ void draw() {
   fill(0, 255, 0);
   rect(50, 500, 300, 50);
   fill(255, 0, 0);
-  text("Current Car Number: " + Integer.toString(tr.getCarNum()), 75, 525);
+  text("Current Car Number: " + Integer.toString(tr.getCarNum()), 175, 525);
+  }
+  else if (entered.toLowerCase().equals("no")){
+    prompt = "Ok...bye then.";
+    exit();
+  }
+}
+
+void intro() {
+  ////textbox
+  //fill(255);
+  //rect(300, 375, 375, 50);
+  //fill(0);
+  //textAlign(LEFT, CENTER);
+  //text(typing, 315, 395);
   
-  fill(255);
+  //textAlign(CENTER);
+  //fill(255);
+  
+  //prompt = "Hey there. You ready to play?";
+  //if (entered.toLowerCase().equals("yes")){
+  //  prompt = "You better be. Entering game now...";
+  //}
+  //else if (entered.toLowerCase().equals("no")){
+  //  prompt = "Ok...bye then.";
+  //  exit();
+  //}
 }
 
 boolean hover(int xcor, int ycor, int width, int height) {
@@ -117,7 +166,24 @@ boolean hover(int xcor, int ycor, int width, int height) {
 }
 
 void keyPressed() {
-   if (keyCode == RIGHT && tr.getCarNum() != tr.getSize()) {
+  /* makes sure you don't go out of the string lenght and putting this 
+  if statement up front allows for multiple backspaces */
+  if ((key == BACKSPACE) && (typing.length() > 0)) {
+      typing = typing.substring(0, typing.length() - 1);
+   }
+   else if (key == '\n' || key == ENTER) {
+      // If the return key is pressed, save the String and clears typing and clears up current prompt 
+      entered = typing;
+      // A String can be cleared by setting it equal to ""
+      prompt = typing = "";
+    } 
+    else {
+      // Otherwise, concatenate the String
+      // Each character typed by the user is added to the end of the String variable.
+      typing = typing + key;
+    }
+   
+  if (keyCode == RIGHT && tr.getCarNum() != tr.getSize()) {
      if (x < 650) {
        protag.translate(200, 0);
        x += 200;
@@ -159,7 +225,6 @@ void mousePressed() {
       file.play();
     }
   }
-  
   if (hover(notesX, notesY, buttonSize, buttonSize)) {
      if (notesOn) {
        notepad.translate(1000, 0); 
@@ -170,7 +235,6 @@ void mousePressed() {
        notesOn = true;
      }
   }
-  
   if (hover(mapBX, mapBY, buttonSize, buttonSize)) {
     mapOn = !mapOn;
   }
