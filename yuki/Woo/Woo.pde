@@ -16,10 +16,10 @@ int y = 50;
 
 PImage play;
 
-int buttonSize = 100;
+int buttonSize = 50;
 
-int musicX = 100;
-int musicY = 600;
+int musicX = 40;
+int musicY = 680;
 boolean musicOn = true;
 
 int notesX = 250;
@@ -67,10 +67,22 @@ void draw() {
   background(0, 0, 50);
   fill(255);
   text(prompt, 500, 350);
-
+  
   //textbox
   stroke(15);
   rect(300, 375, 400, 50, 10);
+  
+  //music button
+  fill(30);
+  rect(musicX, musicY, 50, 50, 10);
+  //displays pause or play depending on music status
+  fill(0);
+  if (musicOn) {
+    text("Pause", musicX + buttonSize/2, musicY + 30);
+  } else {
+    text("Play", musicX + buttonSize/2, musicY + 30);
+  }
+
   fill(0);
   textAlign(LEFT, CENTER);
   text(typing, 315, 395);
@@ -91,14 +103,13 @@ void draw() {
     if (j/60 > 400) {
       background(0, 0, 50);
       fill(255);
-      prompt = "Entered";
-      text(prompt, 500, 350);
-      
-      background(0, 0, 50);
-      fill(255);
       prompt = "You're riding on the 2 train, going downtown to Stuyvesant High School, when the lights start to flicker."
-      + "\nYou pay no mind to it, brushing it off as the usual train shenanigans.";
-      text(prompt, 500, 350);
+      + "\nYou pay no mind to it, brushing it off as the usual train shenanigans."
+      + "\nWhen the lights turn off completely, you're a little surprised, but brush it off again, thinking to yourself 'The MTA needs to step up their game'."
+      + "\nThe lights are off for about a minute, during which you stay engrossed with an intense game of angry birds."
+      + "\nWhen the lights turn back on, you hear a scream." 
+      + "\nYou turn to source of the noise as stare in shock as your eyes fall on a bloodied body sitting in one of the train seats.";
+      text(prompt, 500, 300);
     }
 
     //trainCars();
@@ -113,11 +124,6 @@ void draw() {
 
     image(map, mapBX+1000, mapBY);
 
-    //create music button
-    fill(255);
-    noStroke();
-    rect(musicX, musicY, buttonSize, buttonSize);
-
     //create notes button
     fill(255);
     noStroke();
@@ -131,13 +137,6 @@ void draw() {
     rect(mapBX, mapBY, buttonSize, buttonSize);
     fill(0);
     text("Map", mapBX + buttonSize/2, mapBY + buttonSize/2);
-
-    //displays pause or play depending on music status
-    if (musicOn) {
-      text("Pause", musicX + 0.625*(buttonSize/2), musicY + buttonSize/2);
-    } else {
-      text("Play", musicX + buttonSize/2, musicY + buttonSize/2);
-    }
 
     //shows current train car
     //fill(0, 255, 0);
@@ -172,7 +171,7 @@ void keyPressed() {
     // If the return key is pressed, save the String and clears typing and clears up current prompt
     entered = typing;
     // A String can be cleared by setting it equal to ""
-    prompt = typing = "";
+    typing = "";
   } else {
     // Otherwise, concatenate the String
     // Each character typed by the user is added to the end of the String variable.
